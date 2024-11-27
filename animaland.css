@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.responsive-nav select{
+    height: 0px;
+}
+
+.jumbotron {
+    background-color: #1F4529;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    font-size: 70px;
+}
+
+.jumbotron p {
+    font-size: 15px;
+    position: relative;
+    top: -50px;
+}
+
+nav {
+    background-color: #47663B;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+}
+
+nav li, nav li a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    font-weight: 700;
+    transition: ease-in-out 0.1s;
+}
+
+nav select, .nav option {
+    background-color: #47663B;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+
+.responsive-nav select, .responsive-nav option{
+    background-color: #47663B;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+.content {
+    flex: 9;
+}
+
+article {
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 2px 2px 15px 2px rgb(128, 128, 128);
+}
+
+article h1 {
+    font-size: 40px;
+}
+
+article .title i {
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+
+article .desc p {
+    font-size: 20px;
+    position: relative;
+    top: -30px;
+}
+
+.desc p {
+    font-size: 20px;
+}
+
+article img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 450px;
+}
+
+.populasi {
+    max-height: 1000px;
+}
+
+.desc-content {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+aside figure img {
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+    border-radius: 10px;
+}
+
+aside {
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 2px 2px 15px 2px rgb(128, 128, 128);
+    flex: 1;
+    height: 650px;
+}
+
+footer {
+    background-color: #47663B;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 130px;
+}
+
+footer h1 {
+    font-size: 50px;
+    position: relative;
+    bottom: -20px;
+}
+
+footer p {
+    position: relative;
+    top: -10px;
+}
+
+@media screen and (max-width: 960px) {
+    aside {
+        flex: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        flex: 10;
+    }
+
+    main {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 565px) {
+    nav li a{
+        font-size: 0px;
+    }
+
+    .responsive-nav select{
+        height: 50px;
+        position: relative;
+        left: -130px;
+    }
+
+    .jumbotron h1 {
+        font-size: 50px;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
+    }
+} 
